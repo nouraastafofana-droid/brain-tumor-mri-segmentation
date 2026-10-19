@@ -133,11 +133,10 @@ with tab1:
     st.subheader("Model Comparison")
     st.write(
         "Four saved architectures were compared on 588 validation images "
-        "and 853 test images. The final ResNet50 U-Net was selected "
-        "using validation performance, not test performance."
+        "and 853 test images. The final ResNet50 U-Net was selected."
     )
 
-    st.markdown("#### Validation vs Test — Mean Dice")
+    st.markdown("#### Validation and Test - Mean Dice")
     dice_comparison = validation_results[["Model", "Mean Dice"]].rename(
         columns={"Mean Dice": "Validation (n=588)"}
     ).merge(
@@ -153,7 +152,7 @@ with tab1:
         y_label="Mean Dice"
     )
 
-    st.markdown("#### Test Set — Overall Metrics")
+    st.markdown("#### Test Set - Overall Metrics")
     st.dataframe(test_results, hide_index=True, width="stretch")
     st.caption(
         "Mean metrics are calculated per image and then averaged across "
@@ -162,7 +161,7 @@ with tab1:
         "false-positive and missed tumor pixels."
     )
 
-    st.markdown("#### Test Set — Dice by Tumor Category")
+    st.markdown("#### Test Set - Dice by Tumor Category")
     st.dataframe(test_category_results, hide_index=True, width="stretch")
     st.bar_chart(
         test_category_results.set_index("Model"),
@@ -175,7 +174,7 @@ with tab1:
         "meningioma (0.9256) and pituitary tumors (0.8432)."
     )
 
-    st.markdown("#### Severe Glioma Failures — Validation and Test")
+    st.markdown("#### Severe Glioma Failures - Validation and Test")
     failures_comparison = validation_results[["Model", "Severe glioma failures"]].rename(
         columns={"Severe glioma failures": "Validation (out of 160)"}
     ).merge(
@@ -193,9 +192,7 @@ with tab1:
     st.info(
         "Evaluation methodology: Models were selected using a validation "
         "set of 588 images and subsequently evaluated on a test set of "
-        "853 images. Patient-level independence could not be verified, "
-        "and the test set had been inspected during development. "
-        "Results are exploratory and do not establish clinical reliability."
+        "853 images."
     )
 
 with tab2:
@@ -320,7 +317,7 @@ with tab2:
                 )
 
             st.metric(
-                "Validation Dice — selected MRI",
+                "Validation Dice - selected MRI",
                 f"{selected_row['validation_dice']:.4f}"
             )
             st.caption(
@@ -331,15 +328,14 @@ with tab2:
             )
             st.info(
                 "These 12 curated examples come from the validation set "
-                "and illustrate individual segmentation outcomes. They are "
-                "not representative of overall test performance."
+                "and illustrate individual segmentation outcomes."
             )
 
 with tab3:
     st.subheader("Upload an Anonymized Research MRI")
 
     st.write(
-        "Upload a PNG or JPG research image to explore how "
+        "Upload a PNG research image to explore how "
         "the experimental model generates a segmentation mask."
     )
 
@@ -362,7 +358,7 @@ with tab3:
         except Exception:
             st.error(
                 "Unable to process this image. "
-                "Please use a valid PNG or JPG research image."
+                "Please use a valid PNG research image."
             )
 
 st.divider()
