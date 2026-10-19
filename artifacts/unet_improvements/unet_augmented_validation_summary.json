@@ -1,0 +1,13 @@
+{
+    "selection_dataset": "validation",
+    "validation_images": 588,
+    "baseline_mean_dice": 0.8352885774535516,
+    "augmented_mean_dice": 0.8417240220452925,
+    "mean_dice_gain": 0.0064354445917408735,
+    "glioma_baseline_mean_dice": 0.6830154303108351,
+    "glioma_augmented_mean_dice": 0.7003863746170901,
+    "glioma_severe_failures_baseline": 22,
+    "glioma_severe_failures_augmented": 17,
+    "selected_model": "unet_augmented_best.keras",
+    "selection_reason": "Higher mean validation Dice and fewer severe glioma segmentation failures."
+}
