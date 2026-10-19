@@ -1,0 +1,37 @@
+{
+  "model": "UNet_Baseline",
+  "test_images": 853,
+  "threshold": 0.5,
+  "mean_dice": 0.8209361588353394,
+  "median_dice": 0.9142413659460145,
+  "mean_iou": 0.74115729306592,
+  "median_iou": 0.8420300215003467,
+  "by_tumor_type": {
+    "glioma": {
+      "dice": 0.6698,
+      "iou": 0.5693
+    },
+    "meningioma": {
+      "dice": 0.9256,
+      "iou": 0.8729
+    },
+    "pituitary": {
+      "dice": 0.8432,
+      "iou": 0.7533
+    }
+  },
+  "by_plane": {
+    "axial": {
+      "dice": 0.809,
+      "iou": 0.7317
+    },
+    "coronal": {
+      "dice": 0.8194,
+      "iou": 0.7383
+    },
+    "sagittal": {
+      "dice": 0.8383,
+      "iou": 0.7567
+    }
+  }
+}
