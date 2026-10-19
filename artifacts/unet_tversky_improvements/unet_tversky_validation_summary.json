@@ -1,0 +1,20 @@
+{
+  "model": "unet_bce_tversky",
+  "dataset": "validation",
+  "validation_images": 588,
+  "alpha": 0.3,
+  "beta": 0.7,
+  "mean_dice": 0.8510083501007547,
+  "mean_iou": 0.7709109434833369,
+  "mean_precision": 0.8432280558993965,
+  "mean_recall": 0.8948907651423015,
+  "glioma_images": 160,
+  "glioma_mean_dice": 0.7352173969557038,
+  "glioma_augmented_mean_dice": 0.7003863746170901,
+  "glioma_images_improved": 89,
+  "glioma_images_worsened": 70,
+  "previous_severe_glioma_failures": 17,
+  "current_severe_glioma_failures": 13,
+  "resolved_severe_failures": 6,
+  "new_severe_failures": 2
+}
