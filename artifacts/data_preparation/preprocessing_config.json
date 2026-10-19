@@ -1,0 +1,16 @@
+{
+  "dataset": "BRISC 2025",
+  "image_size": [
+    256,
+    256
+  ],
+  "image_channels": 1,
+  "mask_channels": 1,
+  "image_normalization": "divide_by_255",
+  "mask_threshold": 128,
+  "image_interpolation": "bilinear",
+  "mask_interpolation": "nearest",
+  "batch_size": 16,
+  "random_state": 42,
+  "validation_fraction": 0.15
+}

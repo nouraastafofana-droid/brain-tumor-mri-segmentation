@@ -1,0 +1,46 @@
+{
+  "official_train_count": 3933,
+  "official_test_count": 860,
+  "excluded_test_count": 7,
+  "shared_official_train_test_hashes": 7,
+  "final_train_count": 3345,
+  "final_val_count": 588,
+  "final_test_count": 853,
+  "train_val_hash_overlap": 0,
+  "train_test_hash_overlap": 0,
+  "val_test_hash_overlap": 0,
+  "class_distribution": {
+    "train": {
+      "pituitary": 1240,
+      "meningioma": 1118,
+      "glioma": 987
+    },
+    "val": {
+      "pituitary": 217,
+      "meningioma": 211,
+      "glioma": 160
+    },
+    "test": {
+      "meningioma": 304,
+      "pituitary": 295,
+      "glioma": 254
+    }
+  },
+  "plane_distribution": {
+    "train": {
+      "coronal": 1177,
+      "sagittal": 1121,
+      "axial": 1047
+    },
+    "val": {
+      "sagittal": 203,
+      "axial": 196,
+      "coronal": 189
+    },
+    "test": {
+      "axial": 342,
+      "sagittal": 257,
+      "coronal": 254
+    }
+  }
+}
