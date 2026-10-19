@@ -1,0 +1,21 @@
+{
+  "model": "resnet50_unet_frozen",
+  "pretrained_encoder": "ResNet50_ImageNet",
+  "encoder_frozen": true,
+  "best_epoch": 24,
+  "best_validation_loss": 0.152308851480484,
+  "validation_images": 588,
+  "mean_dice": 0.8569656718631866,
+  "mean_iou": 0.7781341610491616,
+  "mean_precision": 0.8540500805712109,
+  "mean_recall": 0.8970137196802833,
+  "glioma_images": 160,
+  "glioma_mean_dice": 0.7595119738056184,
+  "glioma_tversky_mean_dice": 0.7352173969557038,
+  "glioma_images_improved": 98,
+  "glioma_images_worsened": 62,
+  "previous_severe_glioma_failures": 13,
+  "current_severe_glioma_failures": 10,
+  "resolved_severe_failures": 5,
+  "new_severe_failures": 2
+}
