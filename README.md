@@ -109,7 +109,7 @@ Four U-Net-based models were evaluated using the Dice coefficient, Intersection 
 
 Model development and selection were based on the validation set (588 images). The selected models were subsequently evaluated on the test set (853 images) using the same preprocessing pipeline and a binary segmentation threshold of 0.5.
 
-### 1. Validation Performance — Model Selection
+### 1. Validation Performance - Model Selection
 
 | Model | Mean Dice | Glioma Dice | Severe Glioma Failures |
 |---|---:|---:|---:|
@@ -122,7 +122,7 @@ Model development and selection were based on the validation set (588 images). T
 
 ResNet50 U-Net achieved the highest mean validation Dice and the highest glioma Dice. It was therefore selected as the final model for the interactive application.
 
-### 2. Test Performance — Overall Results
+### 2. Test Performance - Overall Results
 
 The four saved model checkpoints were evaluated on the same 853 test images without additional training or model modification.
 
@@ -137,7 +137,7 @@ ResNet50 U-Net maintained the highest overall Dice and IoU scores on the test se
 
 Its mean Dice decreased from **0.8570 on validation to 0.8373 on test**, a difference of 0.0197.
 
-### 3. Test Performance — Results by Tumor Category
+### 3. Test Performance - Results by Tumor Category
 
 | Model | Glioma Dice | Meningioma Dice | Pituitary Dice |
 |---|---:|---:|---:|
